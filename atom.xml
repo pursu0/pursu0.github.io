@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-26T10:30:36.687Z</updated>
+  <updated>2019-08-29T05:33:37.559Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,28 +21,11 @@
     <link href="http://yoursite.com/2019/08/26/sql%E6%B3%A8%E5%85%A5%E5%90%88%E9%9B%86/"/>
     <id>http://yoursite.com/2019/08/26/sql注入合集/</id>
     <published>2019-08-26T08:54:07.787Z</published>
-    <updated>2019-08-26T10:30:36.687Z</updated>
+    <updated>2019-08-29T05:33:37.559Z</updated>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;Mysql&quot;&gt;&lt;a href=&quot;#Mysql&quot; class=&quot;headerlink&quot; title=&quot;Mysql&quot;&gt;&lt;/a&gt;Mysql&lt;/h2&gt;&lt;h3 id=&quot;常用命令&quot;&gt;&lt;a href=&quot;#常用命令&quot; class=&quot;headerlink&quot; title=&quot;常用命令&quot;&gt;&lt;/a&gt;常用命令&lt;/h3&gt;&lt;h4 id=&quot;基本词&quot;&gt;&lt;a href=&quot;#基本词&quot; class=&quot;headerlink&quot; title=&quot;基本词&quot;&gt;&lt;/a&gt;基本词&lt;/h4&gt;&lt;blockquote&gt;
-&lt;p&gt;Mysql版本version()&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;当前用户名user()&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;数据库名database()&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;数据库路径@@datadir&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;操作系统版本@@version_compile_os&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Mysql的安装路径@@basedir&lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;h2 id=&quot;Mysql&quot;&gt;&lt;a href=&quot;#Mysql&quot; class=&quot;headerlink&quot; title=&quot;Mysql&quot;&gt;&lt;/a&gt;Mysql&lt;/h2&gt;
     
     </summary>
     
@@ -56,14 +39,11 @@
     <link href="http://yoursite.com/2019/08/26/hexo%E5%B8%B8%E7%94%A8%E6%8C%87%E5%8D%97/"/>
     <id>http://yoursite.com/2019/08/26/hexo常用指南/</id>
     <published>2019-08-26T08:44:38.124Z</published>
-    <updated>2019-08-26T10:30:52.900Z</updated>
+    <updated>2019-08-29T05:34:09.955Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;hexo指南&quot;&gt;&lt;a href=&quot;#hexo指南&quot; class=&quot;headerlink&quot; title=&quot;hexo指南&quot;&gt;&lt;/a&gt;hexo指南&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;hexo new ‘文章标题’&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;本地预览&lt;/p&gt;
+      &lt;h3 id=&quot;hexo指南&quot;&gt;&lt;a href=&quot;#hexo指南&quot; class=&quot;headerlink&quot; title=&quot;hexo指南&quot;&gt;&lt;/a&gt;hexo指南&lt;/h3&gt;
     
     </summary>
     

