@@ -83,7 +83,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pursu0 blogs">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://pursu0.github.io/index.html">
 <meta property="og:site_name" content="Pursu0 blogs">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -117,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://pursu0.github.io/">
 
 
 
@@ -283,7 +283,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/29/N-CTF/">
+    <link itemprop="mainEntityOfPage" href="http://pursu0.github.io/2019/08/29/N-CTF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="pursu0">
@@ -375,45 +375,14 @@
 
       
         
-          
-            <a id="more"></a>
-
-<h4 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h4><p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567094728084.png" alt="1567094728084"></p>
-<p>查看源代码</p>
-<h3 id="md5-collision"><a href="#md5-collision" class="headerlink" title="md5 collision"></a>md5 collision</h3><p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567094861812.png" alt="1567094861812"></p>
-<p>md5碰撞，考查php中’==’的缺陷，<a href="http://www.freebuf.com/news/67007.html" target="_blank" rel="noopener">查看文章</a></p>
-<p>QNKCDZO的MD5值为0e830400451993494058024219903391，找到一个MD5前两位是0e的字符串即可得flag</p>
-<h4 id="签到2"><a href="#签到2" class="headerlink" title="签到2"></a>签到2</h4><p>输入口令zhimakaimen即可,发现直接输入限制字数</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567095261664.png" alt="1567095261664"></p>
-<p>采用post传参即可</p>
-<h4 id="这题不是WEB、"><a href="#这题不是WEB、" class="headerlink" title="这题不是WEB、"></a>这题不是WEB、</h4><p>保存图片，用winhex查看，拉到底</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567137694680.png" alt="1567137694680"></p>
-<h4 id="层层递进"><a href="#层层递进" class="headerlink" title="层层递进"></a>层层递进</h4><p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567137730714.png" alt="1567137730714"></p>
-<p>查看源代码，发现有个SO.html，点击进入</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567137863276.png" alt="1567137863276"></p>
-<p>仍有SO.html,依次往下一直进入此网页</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567137925610.png" alt="1567137925610"></p>
-<p>发现404网页获得flag。</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567137954214.png" alt="1567137954214"></p>
-<h4 id="AAencode"><a href="#AAencode" class="headerlink" title="AAencode"></a>AAencode</h4><p>颜文字。用unicode编码网页</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567138927096.png" alt="1567138927096"></p>
-<p>是这样的效果直接网站搜索颜文字在线解密即可</p>
-<p>也可复制到控制台直接运行</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567139184690.png" alt="1567139184690"></p>
-<h3 id="单身二十年"><a href="#单身二十年" class="headerlink" title="单身二十年"></a>单身二十年</h3><p>看题目应该就知道是手速，速度有关就应该是网页跳转，burp拦截再发包即可获得flag</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567139406547.png" alt="1567139406547"></p>
-<h3 id="php-decode"><a href="#php-decode" class="headerlink" title="php decode"></a>php decode</h3><p>源码：</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">CLsI</span><span class="params">($ZzvSWE)</span> </span>&#123;</span><br><span class="line">    $ZzvSWE = gzinflate(base64_decode($ZzvSWE));</span><br><span class="line">    <span class="keyword">for</span> ($i = <span class="number">0</span>; $i &lt; strlen($ZzvSWE); $i++) &#123;</span><br><span class="line">        $ZzvSWE[$i] = chr(ord($ZzvSWE[$i]) - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> $ZzvSWE;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">eval</span>(CLsI(<span class="string">"+7DnQGFmYVZ+eoGmlg0fd3puUoZ1fkppek1GdVZhQnJSSZq5aUImGNQBAA=="</span>));</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>小知识点：可知是一层的eval(gzinflate(base64_decode()))压缩加密；将eval改为echo即可输出flag</p>
-<h3 id="文件包含"><a href="#文件包含" class="headerlink" title="文件包含"></a>文件包含</h3><p>可参考链接：<a href="https://blog.csdn.net/qq_29419013/article/details/81201494" target="_blank" rel="noopener">通过php://filter/read=convert.base64-encode/resource= 利用LFI来查看源码</a></p>
-<p>进入页面<a href="http://4.chinalover.sinaapp.com/web7/index.php?file=show.php" target="_blank" rel="noopener">http://4.chinalover.sinaapp.com/web7/index.php?file=show.php</a></p>
-<p>可知在file做文章构造：file=php://filter/read=convert.base64-encode/resource=index.php</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567143405409.png" alt="1567143405409"></p>
-<p>得到base64加密字符串。解密可得flag</p>
-<p><img src="C:%5CUsers%5Cmsi%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5C1567143471991.png" alt="1567143471991"></p>
-
-          
+          <h4 id="签到题"><a href="#签到题" class="headerlink" title="签到题"></a>签到题</h4>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/08/29/N-CTF/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -460,7 +429,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/26/sql注入合集/">
+    <link itemprop="mainEntityOfPage" href="http://pursu0.github.io/2019/08/26/sql注入合集/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="pursu0">
@@ -606,7 +575,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/26/hexo常用指南/">
+    <link itemprop="mainEntityOfPage" href="http://pursu0.github.io/2019/08/26/hexo常用指南/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="pursu0">
