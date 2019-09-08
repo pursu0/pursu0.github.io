@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pursu0.github.io/"/>
-  <updated>2019-09-01T03:07:38.989Z</updated>
+  <updated>2019-09-08T08:30:14.328Z</updated>
   <id>http://pursu0.github.io/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ichunqiu_CTF</title>
+    <link href="http://pursu0.github.io/2019/09/08/ichunqiu/"/>
+    <id>http://pursu0.github.io/2019/09/08/ichunqiu/</id>
+    <published>2019-09-08T05:50:36.887Z</published>
+    <updated>2019-09-08T08:30:14.328Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;10pt&quot;&gt;&lt;a href=&quot;#10pt&quot; class=&quot;headerlink&quot; title=&quot;10pt&quot;&gt;&lt;/a&gt;10pt&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="CTF" scheme="http://pursu0.github.io/categories/CTF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>备份文件相关</title>
+    <link href="http://pursu0.github.io/2019/09/04/%E5%A4%87%E4%BB%BD%E6%96%87%E4%BB%B6/"/>
+    <id>http://pursu0.github.io/2019/09/04/备份文件/</id>
+    <published>2019-09-04T12:33:53.933Z</published>
+    <updated>2019-09-04T12:41:48.426Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;常见的备份文件后缀名&quot;&gt;&lt;a href=&quot;#常见的备份文件后缀名&quot; class=&quot;headerlink&quot; title=&quot;常见的备份文件后缀名&quot;&gt;&lt;/a&gt;常见的备份文件后缀名&lt;/h4&gt;
+    
+    </summary>
+    
+      <category term="ctf相关" scheme="http://pursu0.github.io/categories/ctf%E7%9B%B8%E5%85%B3/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://pursu0.github.io/2019/09/02/sql%E6%BC%8F%E6%B4%9E/"/>
+    <id>http://pursu0.github.io/2019/09/02/sql漏洞/</id>
+    <published>2019-09-02T15:17:50.295Z</published>
+    <updated>2019-09-02T15:17:50.295Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Nctf write up</title>
     <link href="http://pursu0.github.io/2019/08/29/N-CTF/"/>
     <id>http://pursu0.github.io/2019/08/29/N-CTF/</id>
     <published>2019-08-29T15:45:53.249Z</published>
-    <updated>2019-09-01T03:07:38.989Z</updated>
+    <updated>2019-09-01T03:11:20.890Z</updated>
     
     <summary type="html">
     
@@ -39,7 +89,7 @@
     <link href="http://pursu0.github.io/2019/08/26/sql%E6%B3%A8%E5%85%A5%E5%90%88%E9%9B%86/"/>
     <id>http://pursu0.github.io/2019/08/26/sql注入合集/</id>
     <published>2019-08-26T08:54:07.787Z</published>
-    <updated>2019-08-29T15:33:49.719Z</updated>
+    <updated>2019-09-03T10:10:45.328Z</updated>
     
     <summary type="html">
     

