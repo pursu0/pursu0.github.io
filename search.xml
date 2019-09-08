@@ -17,16 +17,16 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
+    <title><![CDATA[sql漏洞]]></title>
     <url>%2F2019%2F09%2F02%2Fsql%E6%BC%8F%E6%B4%9E%2F</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[Nctf write up]]></title>
+    <title><![CDATA[N-CTF]]></title>
     <url>%2F2019%2F08%2F29%2FN-CTF%2F</url>
     <content type="text"><![CDATA[签到题 查看源代码 md5 collision md5碰撞，考查php中’==’的缺陷，查看文章 QNKCDZO的MD5值为0e830400451993494058024219903391，找到一个MD5前两位是0e的字符串即可得flag 签到2输入口令zhimakaimen即可,发现直接输入限制字数 采用post传参即可 这题不是WEB、保存图片，用winhex查看，拉到底 层层递进 查看源代码，发现有个SO.html，点击进入 仍有SO.html,依次往下一直进入此网页 发现404网页获得flag。 AAencode颜文字。用unicode编码网页 是这样的效果直接网站搜索颜文字在线解密即可 也可复制到控制台直接运行 单身二十年看题目应该就知道是手速，速度有关就应该是网页跳转，burp拦截再发包即可获得flag php decode源码： 12345678910&lt;?phpfunction CLsI($ZzvSWE) &#123; $ZzvSWE = gzinflate(base64_decode($ZzvSWE)); for ($i = 0; $i &lt; strlen($ZzvSWE); $i++) &#123; $ZzvSWE[$i] = chr(ord($ZzvSWE[$i]) - 1); &#125; return $ZzvSWE;&#125;eval(CLsI("+7DnQGFmYVZ+eoGmlg0fd3puUoZ1fkppek1GdVZhQnJSSZq5aUImGNQBAA=="));?&gt; 小知识点：可知是一层的eval(gzinflate(base64_decode()))压缩加密；将eval改为echo即可输出flag 文件包含可参考链接：通过php://filter/read=convert.base64-encode/resource= 利用LFI来查看源码 进入页面http://4.chinalover.sinaapp.com/web7/index.php?file=show.php 可知在file做文章构造：file=php://filter/read=convert.base64-encode/resource=index.php 得到base64加密字符串。解密可得flag]]></content>
       <categories>
-        <category>CTF wp</category>
+        <category>CTF</category>
       </categories>
   </entry>
   <entry>

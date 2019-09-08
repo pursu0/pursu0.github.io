@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pursu0.github.io/"/>
-  <updated>2019-09-08T08:30:14.328Z</updated>
+  <updated>2019-09-08T08:39:53.566Z</updated>
   <id>http://pursu0.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://pursu0.github.io/2019/09/08/ichunqiu/"/>
     <id>http://pursu0.github.io/2019/09/08/ichunqiu/</id>
     <published>2019-09-08T05:50:36.887Z</published>
-    <updated>2019-09-08T08:30:14.328Z</updated>
+    <updated>2019-09-08T08:39:53.566Z</updated>
     
     <summary type="html">
     
@@ -53,11 +53,11 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>sql漏洞</title>
     <link href="http://pursu0.github.io/2019/09/02/sql%E6%BC%8F%E6%B4%9E/"/>
     <id>http://pursu0.github.io/2019/09/02/sql漏洞/</id>
     <published>2019-09-02T15:17:50.295Z</published>
-    <updated>2019-09-02T15:17:50.295Z</updated>
+    <updated>2019-09-08T08:34:54.036Z</updated>
     
     <summary type="html">
     
@@ -67,11 +67,11 @@
   </entry>
   
   <entry>
-    <title>Nctf write up</title>
+    <title>N-CTF</title>
     <link href="http://pursu0.github.io/2019/08/29/N-CTF/"/>
     <id>http://pursu0.github.io/2019/08/29/N-CTF/</id>
     <published>2019-08-29T15:45:53.249Z</published>
-    <updated>2019-09-01T03:11:20.890Z</updated>
+    <updated>2019-09-08T08:40:07.645Z</updated>
     
     <summary type="html">
     
@@ -79,7 +79,7 @@
     
     </summary>
     
-      <category term="CTF wp" scheme="http://pursu0.github.io/categories/CTF-wp/"/>
+      <category term="CTF" scheme="http://pursu0.github.io/categories/CTF/"/>
     
     
   </entry>
