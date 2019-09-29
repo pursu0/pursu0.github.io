@@ -81,14 +81,17 @@
 
 
 
+<meta name="description" content="由sql-labs可了解各种sql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sql漏洞">
 <meta property="og:url" content="http://pursu0.github.io/2019/09/02/sql漏洞/index.html">
 <meta property="og:site_name" content="Pursu0 blogs">
+<meta property="og:description" content="由sql-labs可了解各种sql">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-08T08:34:54.036Z">
+<meta property="og:updated_time" content="2019-09-10T11:14:39.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sql漏洞">
+<meta name="twitter:description" content="由sql-labs可了解各种sql">
 
 
 
@@ -350,7 +353,25 @@
       
 
       
-        
+        <h4 id="由sql-labs可了解各种sql"><a href="#由sql-labs可了解各种sql" class="headerlink" title="由sql-labs可了解各种sql"></a>由sql-labs可了解各种sql</h4><a id="more"></a>
+
+<p>页面没有显示位。无法使用联合查询注入</p>
+<p>(1). 通过floor报错</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and (<span class="keyword">select</span> <span class="number">1</span> <span class="keyword">from</span> (<span class="keyword">select</span> <span class="keyword">count</span>(*),<span class="keyword">concat</span>((payload),<span class="keyword">floor</span> (<span class="keyword">rand</span>(<span class="number">0</span>)*<span class="number">2</span>))x <span class="keyword">from</span> information_schema.tables <span class="keyword">group</span> <span class="keyword">by</span> x)a)</span><br></pre></td></tr></table></figure>
+
+<p>其中payload为你要插入的SQL语句<br>需要注意的是该语句将 输出字符长度限制为64个字符</p>
+<p>其中payload为你要插入的SQL语句<br>需要注意的是该语句将 输出字符长度限制为64个字符</p>
+<p>(2). 通过updatexml报错</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and updatexml(1,payload,1)</span><br></pre></td></tr></table></figure>
+
+<p>同样该语句对输出的字符长度也做了限制，其最长输出32位<br>并且该语句对payload的反悔类型也做了限制，只有在payload返回的不是xml格式才会生效</p>
+<p>同样该语句对输出的字符长度也做了限制，其最长输出32位<br>并且该语句对payload的反悔类型也做了限制，只有在payload返回的不是xml格式才会生效</p>
+<p>(3). 通过ExtractValue报错</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">and extractvalue(1, payload)</span><br></pre></td></tr></table></figure>
+
+<p>输出字符有长度限制，最长32位。</p>
+<p>输出字符有长度限制，最长32位。</p>
+
       
     </div>
     
@@ -438,8 +459,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -454,7 +484,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -497,6 +527,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#由sql-labs可了解各种sql"><span class="nav-number">1.</span> <span class="nav-text">由sql-labs可了解各种sql</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

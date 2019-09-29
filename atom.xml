@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pursu0.github.io/"/>
-  <updated>2019-09-08T08:39:53.566Z</updated>
+  <updated>2019-09-29T11:22:19.418Z</updated>
   <id>http://pursu0.github.io/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://pursu0.github.io/2019/09/29/X-CTF/NaNNaNNaNNaN-Batman/"/>
+    <id>http://pursu0.github.io/2019/09/29/X-CTF/NaNNaNNaNNaN-Batman/</id>
+    <published>2019-09-29T11:15:22.518Z</published>
+    <updated>2019-09-29T11:22:19.418Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          function $(){
+						var t=[&quot;fl&quot;,&quot;s_a&quot;,&quot;i&quot;,&quot;e}&quot;];
+						var n=[&quot;a&quot;,&quot;_h0l&quot;,&quot;n&quot;];
+						var r=[&quot;g{&quot;,&quot;e&quot;,&quot;_0&quot;];
+						var
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://pursu0.github.io/2019/09/28/X-CTF/cat/"/>
+    <id>http://pursu0.github.io/2019/09/28/X-CTF/cat/</id>
+    <published>2019-09-28T05:46:13.066Z</published>
+    <updated>2019-09-28T05:46:40.093Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;&lt;meta name=&quot;generator&quot; content=&quot;Hexo 3.9.0&quot;&gt;
+  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>X-CTF web练习</title>
+    <link href="http://pursu0.github.io/2019/09/28/X-CTF/"/>
+    <id>http://pursu0.github.io/2019/09/28/X-CTF/</id>
+    <published>2019-09-28T04:37:30.394Z</published>
+    <updated>2019-09-29T11:31:33.412Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;新手区&quot;&gt;&lt;a href=&quot;#新手区&quot; class=&quot;headerlink&quot; title=&quot;新手区&quot;&gt;&lt;/a&gt;新手区&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="CTF" scheme="http://pursu0.github.io/categories/CTF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>ichunqiu_CTF</title>
@@ -57,9 +126,11 @@
     <link href="http://pursu0.github.io/2019/09/02/sql%E6%BC%8F%E6%B4%9E/"/>
     <id>http://pursu0.github.io/2019/09/02/sql漏洞/</id>
     <published>2019-09-02T15:17:50.295Z</published>
-    <updated>2019-09-08T08:34:54.036Z</updated>
+    <updated>2019-09-10T11:14:39.348Z</updated>
     
     <summary type="html">
+    
+      &lt;h4 id=&quot;由sql-labs可了解各种sql&quot;&gt;&lt;a href=&quot;#由sql-labs可了解各种sql&quot; class=&quot;headerlink&quot; title=&quot;由sql-labs可了解各种sql&quot;&gt;&lt;/a&gt;由sql-labs可了解各种sql&lt;/h4&gt;
     
     </summary>
     
