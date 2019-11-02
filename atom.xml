@@ -41,11 +41,11 @@
   </entry>
   
   <entry>
-    <title></title>
+    <title>后渗透</title>
     <link href="http://pursu0.github.io/2019/10/27/%E5%90%8E%E6%B8%97%E9%80%8F/"/>
     <id>http://pursu0.github.io/2019/10/27/后渗透/</id>
     <published>2019-10-27T12:01:43.604Z</published>
-    <updated>2019-10-27T12:14:30.017Z</updated>
+    <updated>2019-11-02T08:46:36.961Z</updated>
     
     <summary type="html">
     
@@ -62,6 +62,8 @@
       
     
     </summary>
+    
+      <category term="渗透" scheme="http://pursu0.github.io/categories/%E6%B8%97%E9%80%8F/"/>
     
     
   </entry>
@@ -95,7 +97,7 @@
     <link href="http://pursu0.github.io/2019/10/13/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
     <id>http://pursu0.github.io/2019/10/13/信息收集/</id>
     <published>2019-10-13T11:51:45.314Z</published>
-    <updated>2019-10-13T13:16:03.252Z</updated>
+    <updated>2019-11-02T08:47:54.403Z</updated>
     
     <summary type="html">
     
@@ -109,7 +111,7 @@
     
     </summary>
     
-      <category term="信息收集" scheme="http://pursu0.github.io/categories/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+      <category term="渗透" scheme="http://pursu0.github.io/categories/%E6%B8%97%E9%80%8F/"/>
     
     
   </entry>

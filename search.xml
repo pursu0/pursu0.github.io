@@ -9,9 +9,12 @@
       </categories>
   </entry>
   <entry>
-    <title></title>
+    <title><![CDATA[后渗透]]></title>
     <url>%2F2019%2F10%2F27%2F%E5%90%8E%E6%B8%97%E9%80%8F%2F</url>
     <content type="text"><![CDATA[提权： Hash攻击：抓取用户密码的几种工具： Hashdump Quarks PwDump（支持windows xp/2003/Vista/7/2008/8） Windows Credentials Editor Mimaikatz (在windows 2000 与windows xp 下无法暗示使用]]></content>
+      <categories>
+        <category>渗透</category>
+      </categories>
   </entry>
   <entry>
     <title><![CDATA[BUUCTF]]></title>
@@ -26,7 +29,7 @@
     <url>%2F2019%2F10%2F13%2F%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86%2F</url>
     <content type="text"><![CDATA[1. 收集域名信息1.1whois查询kali下使用，命令:whois （域名） 1.2常见端口 文件共享服务端口 远程连接服务端口 Web应用服务端口 数据库服务端口 邮件服务端口 网络常见协议端口 特殊服务端口 端口及说明及攻击方向详情 1.3指纹识别：识别网站CMS或Web容器中的特征码从而判断其所使用的cms或容器 常见CMS：Dedecms,Discuz,PHPWEB,PHPWind,PHPCMS,ECShop,Dvbbs,SiteWeaver,ASPCMS,帝国,Z-Blog,WordPress ….etc…. 1.4查找真实ip1. 判断是否存在CDN 通过ping目标主域可以观察解析情况判断是否使用了CDN]]></content>
       <categories>
-        <category>信息收集</category>
+        <category>渗透</category>
       </categories>
   </entry>
   <entry>
