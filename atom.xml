@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://pursu0.github.io/"/>
-  <updated>2019-09-29T11:42:03.834Z</updated>
+  <updated>2019-11-02T08:41:11.627Z</updated>
   <id>http://pursu0.github.io/</id>
   
   <author>
@@ -15,6 +15,129 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文件包含漏洞</title>
+    <link href="http://pursu0.github.io/2019/10/29/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"/>
+    <id>http://pursu0.github.io/2019/10/29/文件包含/</id>
+    <published>2019-10-29T13:15:11.752Z</published>
+    <updated>2019-11-02T08:41:11.627Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简述&quot;&gt;&lt;a href=&quot;#简述&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="TOP10漏洞整理" scheme="http://pursu0.github.io/categories/TOP10%E6%BC%8F%E6%B4%9E%E6%95%B4%E7%90%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://pursu0.github.io/2019/10/27/%E5%90%8E%E6%B8%97%E9%80%8F/"/>
+    <id>http://pursu0.github.io/2019/10/27/后渗透/</id>
+    <published>2019-10-27T12:01:43.604Z</published>
+    <updated>2019-10-27T12:14:30.017Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;提权：&lt;/p&gt;
+&lt;p&gt;Hash攻击：&lt;br&gt;抓取用户密码的几种工具：&lt;/p&gt;
+&lt;p&gt;Hashdump&lt;/p&gt;
+&lt;p&gt;Quarks PwDump（支持windows xp/2003/Vista/7/2008/8）&lt;/p&gt;
+&lt;p&gt;Windows Credentials
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>BUUCTF</title>
+    <link href="http://pursu0.github.io/2019/10/17/BuuCTF/"/>
+    <id>http://pursu0.github.io/2019/10/17/BuuCTF/</id>
+    <published>2019-10-17T14:39:25.472Z</published>
+    <updated>2019-10-17T15:15:17.274Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;WEB&quot;&gt;&lt;a href=&quot;#WEB&quot; class=&quot;headerlink&quot; title=&quot;WEB&quot;&gt;&lt;/a&gt;WEB&lt;/h2&gt;&lt;h4 id=&quot;WarmUp&quot;&gt;&lt;a href=&quot;#WarmUp&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="CTF" scheme="http://pursu0.github.io/categories/CTF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>信息收集基础</title>
+    <link href="http://pursu0.github.io/2019/10/13/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+    <id>http://pursu0.github.io/2019/10/13/信息收集/</id>
+    <published>2019-10-13T11:51:45.314Z</published>
+    <updated>2019-10-13T13:16:03.252Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1-收集域名信息&quot;&gt;&lt;a href=&quot;#1-收集域名信息&quot; class=&quot;headerlink&quot; title=&quot;1. 收集域名信息&quot;&gt;&lt;/a&gt;1. 收集域名信息&lt;/h3&gt;&lt;h6 id=&quot;1-1whois查询&quot;&gt;&lt;a href=&quot;#1-1whois查询&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="信息收集" scheme="http://pursu0.github.io/categories/%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>php函数缺陷整理</title>
+    <link href="http://pursu0.github.io/2019/10/10/%E5%87%BD%E6%95%B0%E7%BC%BA%E9%99%B7/"/>
+    <id>http://pursu0.github.io/2019/10/10/函数缺陷/</id>
+    <published>2019-10-10T14:51:58.505Z</published>
+    <updated>2019-10-10T16:11:22.886Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;1-in-array函数：&quot;&gt;&lt;a href=&quot;#1-in-array函数：&quot; class=&quot;headerlink&quot; title=&quot;1.in_array函数：&quot;&gt;&lt;/a&gt;1.in_array函数：&lt;/h4&gt;&lt;p&gt;检查数组中是否存在某个值&lt;/p&gt;
+&lt;p&gt;bool
+        
+      
+    
+    </summary>
+    
+      <category term="代码审计" scheme="http://pursu0.github.io/categories/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>X-CTF web练习</title>
@@ -26,24 +149,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;新手区&quot;&gt;&lt;a href=&quot;#新手区&quot; class=&quot;headerlink&quot; title=&quot;新手区&quot;&gt;&lt;/a&gt;新手区&lt;/h2&gt;
-    
-    </summary>
-    
-      <category term="CTF" scheme="http://pursu0.github.io/categories/CTF/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ichunqiu_CTF</title>
-    <link href="http://pursu0.github.io/2019/09/08/ichunqiu/"/>
-    <id>http://pursu0.github.io/2019/09/08/ichunqiu/</id>
-    <published>2019-09-08T05:50:36.887Z</published>
-    <updated>2019-09-08T08:39:53.566Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;10pt&quot;&gt;&lt;a href=&quot;#10pt&quot; class=&quot;headerlink&quot; title=&quot;10pt&quot;&gt;&lt;/a&gt;10pt&lt;/h2&gt;
     
     </summary>
     
@@ -72,16 +177,18 @@
   
   <entry>
     <title>sql漏洞</title>
-    <link href="http://pursu0.github.io/2019/09/02/sql%E6%BC%8F%E6%B4%9E/"/>
-    <id>http://pursu0.github.io/2019/09/02/sql漏洞/</id>
+    <link href="http://pursu0.github.io/2019/09/02/sql%E6%B3%A8%E5%85%A5/"/>
+    <id>http://pursu0.github.io/2019/09/02/sql注入/</id>
     <published>2019-09-02T15:17:50.295Z</published>
-    <updated>2019-09-10T11:14:39.348Z</updated>
+    <updated>2019-10-29T13:15:04.758Z</updated>
     
     <summary type="html">
     
       &lt;h4 id=&quot;由sql-labs可了解各种sql&quot;&gt;&lt;a href=&quot;#由sql-labs可了解各种sql&quot; class=&quot;headerlink&quot; title=&quot;由sql-labs可了解各种sql&quot;&gt;&lt;/a&gt;由sql-labs可了解各种sql&lt;/h4&gt;
     
     </summary>
+    
+      <category term="TOP10漏洞整理" scheme="http://pursu0.github.io/categories/TOP10%E6%BC%8F%E6%B4%9E%E6%95%B4%E7%90%86/"/>
     
     
   </entry>
